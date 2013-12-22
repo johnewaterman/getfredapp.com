@@ -1,0 +1,222 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background: #1296DF;
+  color: #999;
+  font: normal 16px/1.5 "HelveticaNeue-Light", "Times New Roman", serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #507998;
+  text-decoration: none;
+  text-shadow: none;
+  border-bottom: 1px dotted;
+  -webkit-box-sizing: padding-box;
+     -moz-box-sizing: padding-box;
+          box-sizing: padding-box;
+}
+
+a:hover {
+  color: #24577e;
+  border-bottom: 1px solid;
+}
+
+.app-store,
+.app-store:hover {
+  border-bottom: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: "HelveticaNeue-CondensedBold", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  color: rgb(241,241,241);
+  font-size: 2.25em;
+  text-shadow: none;
+}
+
+/* basic layout */
+#container {
+  width: 100%;
+  max-width: 73em;
+  padding: 0 5%;
+  margin: 0 auto;
+  background: rgb(18,150,223);
+}
+
+header {
+  position: relative;
+  padding: 1em 0;
+  background: rgb(18,150,223);
+}
+
+header h1 {
+  margin: 0;
+  font-family: "HelveticaNeue-CondensedBold", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header h2 {
+  margin: -0.7em 0 0;
+  font-size: 1.25rem;
+}
+
+header h1 {
+  line-height: 1.375;
+}
+
+header h2 {
+  margin: -0.7em 0 0;
+  font-size: 1.25rem;
+  color: rgb(241,241,241);
+}
+
+header img {
+  margin-right: 0.5em;
+  float: left;
+}
+
+#main h1 {
+  line-height: 1.1;
+  font-size: 2.25em;
+  width: 92%;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.04em;
+  color: rgb(241,241,241);
+}
+
+.iphone {
+  position: relative;
+  max-width: 744px;
+  max-height: 396px;
+  padding-bottom: 0%;
+}
+
+.iphone img {
+  position: relative;
+  max-width: 80%;
+  z-index: 100;
+}
+
+.buy {
+  margin: 2em 0 4em;
+}
+
+.button {
+  padding: 0.75em;
+  color: #ddd;
+  border: 0;
+  background-color: #FD872D; 
+  font-family: "HelveticaNeue-CondensedBold", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+  -webkit-border-radius: 0.375em;
+     -moz-border-radius: 0.375em;
+          border-radius: 0.375em;
+  -webkit-background-clip: padding-box;
+}
+
+.button:hover {
+  background: rgb(241,241,241);
+  border: 0;
+  color: rgb(18,150,223);
+}
+
+.button:active {
+  background: #1a3e59;
+}
+
+footer {
+  padding: 1em 0;
+  font-size: 0.75rem;
+}
+
+@media all and (min-width: 37.5em) {
+  body {
+    font-size: 16px;
+  }
+  
+  #container {
+    max-width: 64em;
+  }
+  
+  #main {
+    position: relative;
+    width: 55%;
+    margin-left:45%;
+    min-height: 47em;
+  }
+  
+  #main h1 {
+    font-size: 3.25em;
+    width: 90%;
+    margin-bottom: 0.5em;
+  }
+  
+  .valueprop {
+    font-size: 1.25em;
+    color: rgb(241,241,241);
+  }
+  
+  aside {
+    width: 75%;
+    margin-left: -83%;
+    position: absolute;
+    top: 0em;
+  }
+  
+  .iphone img {
+    max-width: 100%;
+  }
+  
+  .iphone {
+    width: 100%;
+    height: 100%;
+  }
+  
+  header h1 {
+    line-height: 1.375;
+  }
+  
+  header h2 {
+    margin: -0.7em 0 0;
+    font-size: 1.25rem;
+    color: rgb(241,241,241);
+  }
+}
+
+em {
+  font-size: 120%;
+}
+
+.copyright {
+  text-align: center;
+  color: rgb(241, 241, 241);
+  padding-bottom: 1em;
+}
+
+.copyright a {
+  color: rgb(195, 195, 195);
+}
