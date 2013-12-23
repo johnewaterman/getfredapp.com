@@ -16,8 +16,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  height: 100%;
-  background: #1296DF;
+  height: 100%;  
   color: #999;
   font: normal 16px/1.5 "HelveticaNeue-Light", "Times New Roman", serif;
 }
@@ -49,27 +48,31 @@ a:hover {
 h1, h2, h3, h4 {
   font-family: "HelveticaNeue-CondensedBold", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   font-weight: bold;
+  color: rgb(90, 90, 90);
 }
 
 h1 {
-  color: rgb(241,241,241);
   font-size: 2.25em;
   text-shadow: none;
 }
 
 /* basic layout */
 #container {
-  width: 100%;
-  max-width: 73em;
+  width: 100%;  
   padding: 0 5%;
   margin: 0 auto;
-  background: rgb(18,150,223);
+  /*background: rgb(200, 200, 200);*/
 }
 
 header {
   position: relative;
-  padding: 1em 0;
+  padding: 1em;  
   background: rgb(18,150,223);
+}
+
+header h1, h2 {
+  color: rgb(241, 241, 241);
+  text-align: center;
 }
 
 header h1 {
@@ -80,22 +83,26 @@ header h1 {
 
 header h2 {
   margin: -0.7em 0 0;
-  font-size: 1.25rem;
-}
-
-header h1 {
-  line-height: 1.375;
-}
-
-header h2 {
-  margin: -0.7em 0 0;
-  font-size: 1.25rem;
-  color: rgb(241,241,241);
+  font-size: 1.25em;
 }
 
 header img {
-  margin-right: 0.5em;
-  float: left;
+  display: block;
+  margin: auto;  
+}
+
+em {
+  font-size: 120%;
+}
+
+.copyright {
+  text-align: center;
+  color: rgb(50, 50, 50);
+  padding-bottom: 1em;
+}
+
+.copyright a {
+  color: rgb(0, 0, 0);
 }
 
 #main h1 {
@@ -104,50 +111,14 @@ header img {
   width: 92%;
   margin-bottom: 0.5em;
   letter-spacing: 0.04em;
-  color: rgb(241,241,241);
 }
 
 .iphone {
   position: relative;
   max-width: 744px;
   max-height: 396px;
-  padding-bottom: 0%;
 }
-
-.iphone img {
-  position: relative;
-  max-width: 80%;
-  z-index: 100;
-}
-
-.buy {
-  margin: 2em 0 4em;
-}
-
-.button {
-  padding: 0.75em;
-  color: #ddd;
-  border: 0;
-  background-color: #FD872D; 
-  font-family: "HelveticaNeue-CondensedBold", "Arial Narrow", Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1.25em;
-  -webkit-border-radius: 0.375em;
-     -moz-border-radius: 0.375em;
-          border-radius: 0.375em;
-  -webkit-background-clip: padding-box;
-}
-
-.button:hover {
-  background: rgb(241,241,241);
-  border: 0;
-  color: rgb(18,150,223);
-}
-
-.button:active {
-  background: #1a3e59;
-}
-
+  
 footer {
   padding: 1em 0;
   font-size: 0.75rem;
@@ -164,8 +135,8 @@ footer {
   
   #main {
     position: relative;
-    width: 55%;
-    margin-left:45%;
+    width: 48%;
+    margin-left:52%;
     min-height: 47em;
   }
   
@@ -177,12 +148,12 @@ footer {
   
   .valueprop {
     font-size: 1.25em;
-    color: rgb(241,241,241);
+    color: rgb(90, 90, 90);
   }
   
   aside {
-    width: 75%;
-    margin-left: -83%;
+    width: 90%;
+    margin-left: -90%;
     position: absolute;
     top: 0em;
   }
@@ -207,16 +178,8 @@ footer {
   }
 }
 
-em {
-  font-size: 120%;
-}
-
-.copyright {
-  text-align: center;
-  color: rgb(241, 241, 241);
-  padding-bottom: 1em;
-}
-
-.copyright a {
-  color: rgb(195, 195, 195);
+@media all and (max-width: 37.5em) {
+  div.iphone {
+    display: none; 
+  } 
 }
