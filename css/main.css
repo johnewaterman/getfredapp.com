@@ -30,15 +30,17 @@ a {
   color: #507998;
   text-decoration: none;
   text-shadow: none;
-  border-bottom: 1px dotted;
+  /* hiding this to help with the app button
+      border-bottom: 1px dotted;*/
   -webkit-box-sizing: padding-box;
      -moz-box-sizing: padding-box;
           box-sizing: padding-box;
 }
 
+
 a:hover {
   color: #24577e;
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid; */
 }
 
 .app-store,
@@ -56,6 +58,8 @@ h1 {
   font-size: 2.25em;
   text-shadow: none;
 }
+ h5 {font-size: 1.25em;
+    color:#FF5648;}
 
 /* basic layout */
 #container {
@@ -68,7 +72,7 @@ h1 {
 
 header {
   position: relative;
-  padding: 1em 0;
+  padding: 1.5em 0;
   background: rgb(18,150,223);
 }
 
@@ -122,6 +126,16 @@ header img {
 
 .buy {
   margin: 2em 0 4em;
+  padding: 0.75em;
+  -webkit-border-radius: 0.375em;
+     -moz-border-radius: 0.375em;
+          border-radius: 0.375em;
+  -webkit-background-clip: padding-box;
+}
+
+.appbutton img{
+  text-decoration: none;
+  border-bottom: none;
 }
 
 .button {
